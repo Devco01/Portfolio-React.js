@@ -4,14 +4,26 @@ import aboutImage from "../../images/john-doe-about.jpg";
 import './Home.css';
 
 const Home = ({ onButtonClick }) => {
+  const handleClick = () => {
+    console.log('Type de onButtonClick:', typeof onButtonClick);
+    console.log('onButtonClick est-il une fonction ?', typeof onButtonClick === 'function');
+    console.log('Bouton cliqué dans Home');
+    if (onButtonClick) {
+      console.log('Appel de onButtonClick');
+      onButtonClick();
+    } else {
+      console.log('onButtonClick n\'est pas défini');
+    }
+  };
+
   return (
     <>
       {/* HeroSection */}
       <section className="hero-section" style={{ backgroundImage: `url(${heroImage})` }}>
         <div className="hero-content">
-          <h1>Bonjour, je suis John Doe</h1>
-          <p>Développeur web full-stack</p>
-          <button className="btn btn-primary" onClick={onButtonClick}>En savoir plus</button>
+          <h1 className="hero-title">Bonjour, je suis John Doe</h1>
+          <p className="hero-subtitle">Développeur web full-stack</p>
+          <button className="btn btn-primary" onClick={handleClick}>En savoir plus</button>
         </div>
       </section>
 

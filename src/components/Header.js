@@ -2,39 +2,32 @@ import React, { useState } from "react";
 import "./Header.css";
 
 function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const handleLinkClick = () => {
-    setIsOpen(false);
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <header className="header">
       <div className="header-content">
-        <a href="/" className="logo">JOHN DOE</a>
-        
+        <span className="logo">John Doe</span>
         <button 
-          className={`burger ${isOpen ? 'open' : ''}`} 
-          onClick={toggleMenu} 
+          className={`burger-menu ${isMenuOpen ? 'active' : ''}`} 
+          onClick={toggleMenu}
           aria-label="Menu"
-          aria-expanded={isOpen}
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span className="burger-bar"></span>
+          <span className="burger-bar"></span>
+          <span className="burger-bar"></span>
         </button>
-
-        <nav>
-          <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-            <li><a href="/" className="active" onClick={handleLinkClick}>HOME</a></li>
-            <li><a href="/services" onClick={handleLinkClick}>SERVICES</a></li>
-            <li><a href="/portfolio" onClick={handleLinkClick}>PORTFOLIO</a></li>
-            <li><a href="/contact" onClick={handleLinkClick}>CONTACT</a></li>
-            <li><a href="/mentions-legales" onClick={handleLinkClick}>MENTIONS LÉGALES</a></li>
+        <nav className={isMenuOpen ? 'active' : ''}>
+          <ul className="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#mentions">MENTIONS LÉGALES</a></li>
           </ul>
         </nav>
       </div>

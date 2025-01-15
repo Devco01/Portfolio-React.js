@@ -12,17 +12,13 @@ function App() {
   const [profile, setProfile] = useState({});
 
   useEffect(() => {
-    // Appel sans token pour les données publiques
+    console.log('État de la modale changé:', isModalOpen);
+  }, [isModalOpen]);
+
+  useEffect(() => {
     fetch('https://api.github.com/users/Devco01')
       .then(response => {
         console.log('Status de la réponse:', response.status);
-        
-        if (!response.ok) {
-          return response.text().then(text => {
-            console.error('Erreur API:', text);
-            throw new Error(`GitHub API error: ${text}`);
-          });
-        }
         return response.json();
       })
       .then(data => {
@@ -31,14 +27,24 @@ function App() {
       })
       .catch(error => {
         console.error('Erreur lors de la récupération du profil:', error);
+        // Définir un profil par défaut en cas d'erreur
+        setProfile({
+          login: 'Devco01',
+          avatar_url: 'https://github.com/identicons/Devco01.png',
+          bio: 'Développeur web full-stack',
+          public_repos: 0,
+          html_url: 'https://github.com/Devco01'
+        });
       });
   }, []);
 
   const handleOpenModal = () => {
+    console.log('Ouverture de la modale demandée');
     setIsModalOpen(true);
   };
 
   const handleCloseModal = () => {
+    console.log('Fermeture de la modale demandée');
     setIsModalOpen(false);
   };
 
@@ -47,7 +53,11 @@ function App() {
       <Header />
       <Home onButtonClick={handleOpenModal} />
       <Footer />
-      <Modal isOpen={isModalOpen} onClose={handleCloseModal} profile={profile} />
+      <Modal 
+        isOpen={isModalOpen} 
+        onClose={handleCloseModal} 
+        profile={profile} 
+      />
     </div>
   );
 }

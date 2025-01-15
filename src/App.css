@@ -1,5 +1,18 @@
+* {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: 600;
+}
+
 .App {
-  text-align: center;
+  min-height: 100vh;
+  position: relative;
 }
 
 .App-logo {
@@ -54,13 +67,15 @@
 }
 
 .hero-title {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 4.5rem !important;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+  font-size: 3.5rem !important;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
 }
 
 .cta-button {
