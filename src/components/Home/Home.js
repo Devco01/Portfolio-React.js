@@ -1,0 +1,89 @@
+import React from 'react';
+import heroImage from "../../images/hero-bg.jpg";
+import aboutImage from "../../images/john-doe-about.jpg";
+import './Home.css';
+
+const Home = ({ onButtonClick }) => {
+  return (
+    <>
+      {/* HeroSection */}
+      <section className="hero-section" style={{ backgroundImage: `url(${heroImage})` }}>
+        <div className="hero-content">
+          <h1>Bonjour, je suis John Doe</h1>
+          <p>Développeur web full-stack</p>
+          <button className="btn btn-primary" onClick={onButtonClick}>En savoir plus</button>
+        </div>
+      </section>
+
+      {/* AboutAndSkills */}
+      <div className="about-skills-container">
+        <div className="about-column">
+          <h2>À propos</h2>
+          <div className="about-content">
+            <img src={aboutImage} alt="John Doe" className="about-image" />
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio, necessitatibus consectetur tempore perferendis nostrum, ex delectus nisi</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio, necessitatibus consectetur tempore perferendis nostrum, ex delectus nisi</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio, necessitatibus consectetur tempore perferendis nostrum, ex delectus nisi</p>
+          </div>
+        </div>
+
+        <div className="skills-column">
+          <h2>Mes compétences</h2>
+          <div className="skills-content">
+            <div className="skill-item">
+              <div className="skill-info">
+                <span>HTML5</span>
+                <span>90%</span>
+              </div>
+              <div className="skill-bar">
+                <div className="skill-progress html" style={{width: '90%'}}></div>
+              </div>
+            </div>
+
+            <div className="skill-item">
+              <div className="skill-info">
+                <span>CSS3</span>
+                <span>80%</span>
+              </div>
+              <div className="skill-bar">
+                <div className="skill-progress css" style={{width: '80%'}}></div>
+              </div>
+            </div>
+
+            <div className="skill-item">
+              <div className="skill-info">
+                <span>JAVASCRIPT</span>
+                <span>70%</span>
+              </div>
+              <div className="skill-bar">
+                <div className="skill-progress js" style={{width: '70%'}}></div>
+              </div>
+            </div>
+
+            <div className="skill-item">
+              <div className="skill-info">
+                <span>PHP</span>
+                <span>60%</span>
+              </div>
+              <div className="skill-bar">
+                <div className="skill-progress php" style={{width: '60%'}}></div>
+              </div>
+            </div>
+
+            <div className="skill-item">
+              <div className="skill-info">
+                <span>REACT</span>
+                <span>50%</span>
+              </div>
+              <div className="skill-bar">
+                <div className="skill-progress react" style={{width: '50%'}}></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Home; 

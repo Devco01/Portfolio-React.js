@@ -1,0 +1,36 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "Mon devoir pour créer un portfolio avec React.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devco01/Portfolio-React.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Devco01/Portfolio-React.js/issues"
+  },
+  "homepage": ".",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "react-dom": "^19.0.0",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^x.x.x"
+  }
+}

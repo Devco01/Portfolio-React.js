@@ -1,0 +1,153 @@
+/* Hero Section styles */
+.hero-section {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* About and Skills Section */
+.about-skills-container {
+  display: flex;
+  padding: 30px;
+  background-color: white;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 50px auto;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.about-column, .skills-column {
+  flex: 1;
+  padding: 15px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #333;
+  width: 100%;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  display: block;
+}
+
+h2::after {
+  display: none;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.about-content p {
+  margin-bottom: 15px;
+  color: #666;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Skills styles */
+.skill-item {
+  margin-bottom: 25px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+
+.skill-bar {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.skill-progress {
+  height: 100%;
+  transition: width 1s ease;
+}
+
+.skill-progress.html {
+  background-color: #dc3545;
+}
+
+.skill-progress.css {
+  background-color: #7ac3ce;
+}
+
+.skill-progress.js {
+  background-color: #ffc107;
+}
+
+.skill-progress.php {
+  background-color: #28a745;
+}
+
+.skill-progress.react {
+  background-color: #007bff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .about-skills-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+} 
