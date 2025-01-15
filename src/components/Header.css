@@ -44,6 +44,12 @@
   color: white !important;
   text-decoration: none !important;
   font-size: 0.9rem !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.header .nav-links a:hover {
+  text-decoration: underline !important;
+  opacity: 0.9 !important;
 }
 
 @media screen and (max-width: 480px) {
