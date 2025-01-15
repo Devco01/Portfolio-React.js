@@ -1,5 +1,6 @@
 {
   "files": {
+<<<<<<< Updated upstream
     "main.css": "http://localhost:3000/static/css/main.ceff3a56.css",
     "main.js": "http://localhost:3000/static/js/main.8580ac6e.js",
     "static/js/563.1ca7d655.chunk.js": "http://localhost:3000/static/js/563.1ca7d655.chunk.js",
@@ -15,5 +16,40 @@
   "entrypoints": [
     "static/css/main.ceff3a56.css",
     "static/js/main.8580ac6e.js"
+=======
+<<<<<<< HEAD
+    "main.css": "http://localhost:3000/Devco01/Portfolio-React.js/static/css/main.068a728f.css",
+    "main.js": "http://localhost:3000/Devco01/Portfolio-React.js/static/js/main.217cf372.js",
+    "static/js/563.1ca7d655.chunk.js": "http://localhost:3000/Devco01/Portfolio-React.js/static/js/563.1ca7d655.chunk.js",
+    "static/media/hero-bg.jpg": "http://localhost:3000/Devco01/Portfolio-React.js/static/media/hero-bg.b8e12f2e72b502a5488a.jpg",
+    "static/media/john-doe-about.jpg": "http://localhost:3000/Devco01/Portfolio-React.js/static/media/john-doe-about.07bb2b3f66fb2530c208.jpg",
+    "static/media/github.png": "http://localhost:3000/Devco01/Portfolio-React.js/static/media/github.f11021803f68852df283.png",
+    "static/media/twitter.png": "http://localhost:3000/Devco01/Portfolio-React.js/static/media/twitter.480d6b94e25315f13d96.png",
+    "index.html": "http://localhost:3000/Devco01/Portfolio-React.js/index.html",
+    "main.068a728f.css.map": "http://localhost:3000/Devco01/Portfolio-React.js/static/css/main.068a728f.css.map",
+    "main.217cf372.js.map": "http://localhost:3000/Devco01/Portfolio-React.js/static/js/main.217cf372.js.map",
+    "563.1ca7d655.chunk.js.map": "http://localhost:3000/Devco01/Portfolio-React.js/static/js/563.1ca7d655.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.068a728f.css",
+    "static/js/main.217cf372.js"
+=======
+    "main.css": "http://localhost:3000/static/css/main.ceff3a56.css",
+    "main.js": "http://localhost:3000/static/js/main.8580ac6e.js",
+    "static/js/563.1ca7d655.chunk.js": "http://localhost:3000/static/js/563.1ca7d655.chunk.js",
+    "static/media/hero-bg.jpg": "http://localhost:3000/static/media/hero-bg.b8e12f2e72b502a5488a.jpg",
+    "static/media/john-doe-about.jpg": "http://localhost:3000/static/media/john-doe-about.07bb2b3f66fb2530c208.jpg",
+    "static/media/github.png": "http://localhost:3000/static/media/github.f11021803f68852df283.png",
+    "static/media/twitter.png": "http://localhost:3000/static/media/twitter.480d6b94e25315f13d96.png",
+    "index.html": "http://localhost:3000/index.html",
+    "main.ceff3a56.css.map": "http://localhost:3000/static/css/main.ceff3a56.css.map",
+    "main.8580ac6e.js.map": "http://localhost:3000/static/js/main.8580ac6e.js.map",
+    "563.1ca7d655.chunk.js.map": "http://localhost:3000/static/js/563.1ca7d655.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ceff3a56.css",
+    "static/js/main.8580ac6e.js"
+>>>>>>> 5d8accef (nettoyer l'historique)
+>>>>>>> Stashed changes
   ]
 }

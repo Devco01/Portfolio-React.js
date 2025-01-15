@@ -15,9 +15,15 @@ function Footer() {
           <p>10 20 30 40 50</p>
           <p>john.doe@gmail.com</p>
           <div className="footer-social">
-            <a href="#"><img src={githubIcon} alt="GitHub" /></a>
-            <a href="#"><img src={twitterIcon} alt="Twitter" /></a>
-            <a href="#"><img src={linkedinIcon} alt="LinkedIn" /></a>
+            <a href="https://github.com/Devco01" target="_blank" rel="noopener noreferrer">
+              <img src={githubIcon} alt="GitHub" />
+            </a>
+            <a href="https://twitter.com/votre_compte" target="_blank" rel="noopener noreferrer">
+              <img src={twitterIcon} alt="Twitter" />
+            </a>
+            <a href="https://linkedin.com/in/votre_compte" target="_blank" rel="noopener noreferrer">
+              <img src={linkedinIcon} alt="LinkedIn" />
+            </a>
           </div>
         </div>
         <div className="footer-section">
