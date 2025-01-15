@@ -24,27 +24,6 @@
       "react-app/jest"
     ]
   },
-<<<<<<< Updated upstream
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Devco01/Portfolio-React.js/issues"
-  },
-  "homepage": ".",
-  "dependencies": {
-    "bootstrap": "^5.3.3",
-    "react-dom": "^19.0.0",
-    "react-scripts": "^5.0.1"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^x.x.x"
-=======
   "browserslist": {
     "production": [
       ">0.2%",
@@ -56,6 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
->>>>>>> Stashed changes
   }
 }
