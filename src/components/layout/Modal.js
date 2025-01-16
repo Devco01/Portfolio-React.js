@@ -1,11 +1,6 @@
 import React from 'react';
 import { createPortal } from 'react-dom';
 import './Modal.css';
-import userIcon from '../images/utilisateur.png';
-import cubeIcon from '../images/cube.png';
-import paragraphIcon from '../images/paragraphe.png';
-import placeholderIcon from '../images/placeholder.png';
-import followersIcon from '../images/followers.png';
 
 const Modal = ({ isOpen, onClose, profile }) => {
   if (!isOpen) return null;
@@ -36,27 +31,27 @@ const Modal = ({ isOpen, onClose, profile }) => {
           </div>
           <div className="modal-info">
             <a href={profile?.html_url || "https://github.com/Devco01"} target="_blank" rel="noopener noreferrer" className="info-item username">
-              <img src={userIcon} alt="User" className="icon" />
+              <img src={process.env.PUBLIC_URL + '/images/utilisateur.png'} alt="User" className="icon" />
               <span>{profile?.login || "John Doe"}</span>
             </a>
             <div className="info-item">
-              <img src={placeholderIcon} alt="Location" className="icon" />
+              <img src={process.env.PUBLIC_URL + '/images/placeholder.png'} alt="Location" className="icon" />
               <span>{profile?.location || ""}</span>
             </div>
             <div className="info-item bio">
-              <img src={paragraphIcon} alt="Bio" className="icon" />
+              <img src={process.env.PUBLIC_URL + '/images/paragraphe.png'} alt="Bio" className="icon" />
               <span>{profile?.bio || "As we all know, John Doe's identity is unknown. I just wanted to contribute without being known."}</span>
             </div>
             <div className="info-item">
-              <img src={cubeIcon} alt="Repositories" className="icon" />
+              <img src={process.env.PUBLIC_URL + '/images/cube.png'} alt="Repositories" className="icon" />
               <span>Repositories : {profile?.public_repos || "1"}</span>
             </div>
             <div className="info-item">
-              <img src={followersIcon} alt="Followers" className="icon" />
+              <img src={process.env.PUBLIC_URL + '/images/followers.png'} alt="Followers" className="icon" />
               <span>Followers : {profile?.followers || "16"}</span>
             </div>
             <div className="info-item">
-              <img src={followersIcon} alt="Following" className="icon" />
+              <img src={process.env.PUBLIC_URL + '/images/followers.png'} alt="Following" className="icon" />
               <span>Following : {profile?.following || "0"}</span>
             </div>
           </div>

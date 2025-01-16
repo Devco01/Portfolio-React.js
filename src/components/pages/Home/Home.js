@@ -1,7 +1,6 @@
 import React from 'react';
-import heroImage from "../../images/hero-bg.jpg";
-import aboutImage from "../../images/john-doe-about.jpg";
 import './Home.css';
+import heroBg from '../../../assets/images/hero-bg.jpg';
 
 const Home = ({ onButtonClick }) => {
   const handleClick = () => {
@@ -19,7 +18,7 @@ const Home = ({ onButtonClick }) => {
   return (
     <>
       {/* HeroSection */}
-      <section className="hero-section" style={{ backgroundImage: `url(${heroImage})` }}>
+      <section className="hero-section" style={{ backgroundImage: `url(${heroBg})` }}>
         <div className="hero-content">
           <h1 className="hero-title">Bonjour, je suis John Doe</h1>
           <p className="hero-subtitle">Développeur web full-stack</p>
@@ -32,7 +31,7 @@ const Home = ({ onButtonClick }) => {
         <div className="about-column">
           <h2>À propos</h2>
           <div className="about-content">
-            <img src={aboutImage} alt="John Doe" className="about-image" />
+            <img src={process.env.PUBLIC_URL + '/images/john-doe-about.jpg'} alt="John Doe" className="about-image" />
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio, necessitatibus consectetur tempore perferendis nostrum, ex delectus nisi</p>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio, necessitatibus consectetur tempore perferendis nostrum, ex delectus nisi</p>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio, necessitatibus consectetur tempore perferendis nostrum, ex delectus nisi</p>
