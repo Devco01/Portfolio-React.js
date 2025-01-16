@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
@@ -23,8 +24,8 @@ function Header() {
         </button>
         <nav className={isMenuOpen ? 'active' : ''}>
           <ul className="nav-links">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#services">SERVICES</a></li>
+            <li><Link to="/">HOME</Link></li>
+            <li><Link to="/services">SERVICES</Link></li>
             <li><a href="#portfolio">PORTFOLIO</a></li>
             <li><a href="#contact">CONTACT</a></li>
             <li><a href="#mentions">MENTIONS LÉGALES</a></li>
