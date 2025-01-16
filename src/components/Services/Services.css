@@ -132,7 +132,7 @@
 
 @media (max-width: 480px) {
   .services-hero {
-    height: 200px;
+    height: 150px;
   }
 
   .services-content h1 {
@@ -141,5 +141,9 @@
 
   .service-card {
     padding: 20px;
+  }
+
+  .services-subtitle::after {
+    width: 120px;
   }
 } 
