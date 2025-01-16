@@ -1,24 +1,17 @@
 import React from 'react';
 import './Home.css';
-import heroBg from '../../../assets/images/hero-bg.jpg';
 
 const Home = ({ onButtonClick }) => {
   const handleClick = () => {
-    console.log('Type de onButtonClick:', typeof onButtonClick);
-    console.log('onButtonClick est-il une fonction ?', typeof onButtonClick === 'function');
-    console.log('Bouton cliqué dans Home');
     if (onButtonClick) {
-      console.log('Appel de onButtonClick');
       onButtonClick();
-    } else {
-      console.log('onButtonClick n\'est pas défini');
     }
   };
 
   return (
     <>
       {/* HeroSection */}
-      <section className="hero-section" style={{ backgroundImage: `url(${heroBg})` }}>
+      <section className="hero-section" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/hero-bg.jpg)` }}>
         <div className="hero-content">
           <h1 className="hero-title">Bonjour, je suis John Doe</h1>
           <p className="hero-subtitle">Développeur web full-stack</p>
@@ -31,7 +24,7 @@ const Home = ({ onButtonClick }) => {
         <div className="about-column">
           <h2>À propos</h2>
           <div className="about-content">
-            <img src={process.env.PUBLIC_URL + '/images/john-doe-about.jpg'} alt="John Doe" className="about-image" />
+            <img src={`${process.env.PUBLIC_URL}/images/john-doe-about.jpg`} alt="John Doe" className="about-image" />
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio, necessitatibus consectetur tempore perferendis nostrum, ex delectus nisi</p>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio, necessitatibus consectetur tempore perferendis nostrum, ex delectus nisi</p>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio, necessitatibus consectetur tempore perferendis nostrum, ex delectus nisi</p>

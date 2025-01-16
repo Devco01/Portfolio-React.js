@@ -1,6 +1,5 @@
 import React from 'react';
 import './Portfolio.css';
-import banner from '../../../assets/images/banner.jpg';
 
 const portfolioData = [
     {
@@ -56,7 +55,11 @@ const portfolioData = [
 const Portfolio = () => {
     return (
         <main className="portfolio-container">
-            <section className="portfolio-hero" style={{ backgroundImage: `url(${banner})` }}></section>
+            <section className="portfolio-hero" style={{ 
+              backgroundImage: `url(${process.env.PUBLIC_URL}/images/banner.jpg)`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center'
+            }}></section>
             
             <section className="portfolio">
                 <h1>Portfolio</h1>
@@ -65,7 +68,7 @@ const Portfolio = () => {
                 <div className="portfolio-grid">
                     {portfolioData.map(project => (
                         <div key={project.id} className="portfolio-card">
-                            <img src={process.env.PUBLIC_URL + project.image} alt={project.title} />
+                            <img src={`${process.env.PUBLIC_URL}${project.image}`} alt={project.title} />
                             <div className="portfolio-card-content">
                                 <h3>{project.title}</h3>
                                 <p>{project.description}</p>
