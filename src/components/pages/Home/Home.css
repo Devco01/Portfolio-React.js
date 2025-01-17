@@ -6,7 +6,6 @@ body {
   box-sizing: border-box !important;
 }
 
-/* Hero Section styles */
 .hero-section {
   height: 80vh;
   background-size: cover;
@@ -57,7 +56,6 @@ body {
   cursor: pointer;
 }
 
-/* About and Skills Section */
 .about-skills-container {
   display: flex !important;
   padding: 30px !important;
@@ -103,7 +101,6 @@ h2::after {
   text-align: justify;
 }
 
-/* Skills styles */
 .skill-item {
   margin-bottom: 25px;
 }
@@ -148,7 +145,6 @@ h2::after {
   background-color: #007bff;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
   .about-skills-container {
     flex-direction: column !important;

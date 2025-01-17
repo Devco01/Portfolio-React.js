@@ -28,7 +28,7 @@ function Header() {
             <li><Link to="/services">SERVICES</Link></li>
             <li><Link to="/portfolio">PORTFOLIO</Link></li>
             <li><Link to="/contact">CONTACT</Link></li>
-            <li><a href="#mentions">MENTIONS LÉGALES</a></li>
+            <li><Link to="/mentions-legales">MENTIONS LÉGALES</Link></li>
           </ul>
         </nav>
       </div>

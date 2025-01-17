@@ -2,24 +2,16 @@ import React from 'react';
 import './Home.css';
 
 const Home = ({ onButtonClick }) => {
-  const handleClick = () => {
-    if (onButtonClick) {
-      onButtonClick();
-    }
-  };
-
   return (
     <>
-      {/* HeroSection */}
       <section className="hero-section" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/hero-bg.jpg)` }}>
         <div className="hero-content">
           <h1 className="hero-title">Bonjour, je suis John Doe</h1>
           <p className="hero-subtitle">Développeur web full-stack</p>
-          <button className="btn btn-primary" onClick={handleClick}>En savoir plus</button>
+          <button className="btn btn-primary" onClick={onButtonClick}>En savoir plus</button>
         </div>
       </section>
 
-      {/* AboutAndSkills */}
       <div className="about-skills-container">
         <div className="about-column">
           <h2>À propos</h2>

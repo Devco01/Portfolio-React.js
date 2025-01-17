@@ -320,7 +320,7 @@
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease-in-out;
-  transform: translateY(-10px);
+  transform: translateY(0);
 }
 
 .close-button:hover {
