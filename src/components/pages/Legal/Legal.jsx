@@ -27,7 +27,7 @@ const Legal = () => {
         </div>
 
         <div className="legal-content">
-          <div className="legal-section">
+          <article className="legal-section">
             <div 
               className={`section-header ${openSection === 'editor' ? 'active' : ''}`}
               onClick={() => toggleSection('editor')}
@@ -58,9 +58,9 @@ const Legal = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div className="legal-section">
+          <article className="legal-section">
             <div 
               className={`section-header ${openSection === 'host' ? 'active' : ''}`}
               onClick={() => toggleSection('host')}
@@ -82,9 +82,9 @@ const Legal = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div className="legal-section">
+          <article className="legal-section">
             <div 
               className={`section-header ${openSection === 'credits' ? 'active' : ''}`}
               onClick={() => toggleSection('credits')}
@@ -112,7 +112,7 @@ const Legal = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </div>
