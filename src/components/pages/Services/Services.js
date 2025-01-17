@@ -1,5 +1,8 @@
 import React from 'react';
 import './Services.css';
+import pinceauIcon from '../../../assets/icons/pinceau.svg';
+import codeIcon from '../../../assets/icons/code.png';
+import loupeIcon from '../../../assets/icons/loupe.svg';
 
 const Services = () => {
   return (
@@ -21,7 +24,7 @@ const Services = () => {
           <div className="service-card">
             <div className="service-icon">
               <img 
-                src={`${process.env.PUBLIC_URL}/images/pinceau.svg`}
+                src={pinceauIcon}
                 alt="UX Design icon"
                 style={{width: '35px', height: '35px'}}
               />
@@ -33,9 +36,9 @@ const Services = () => {
           <div className="service-card">
             <div className="service-icon">
               <img 
-                src={`${process.env.PUBLIC_URL}/images/code.png`}
+                src={codeIcon}
                 alt="Développement web icon"
-                style={{width: '35px', height: '35px'}}
+                style={{width: '45px', height: '45px'}}
               />
             </div>
             <h3>Développement Web</h3>
@@ -45,7 +48,7 @@ const Services = () => {
           <div className="service-card">
             <div className="service-icon">
               <img 
-                src={`${process.env.PUBLIC_URL}/images/loupe.svg`}
+                src={loupeIcon}
                 alt="Référencement icon"
                 style={{width: '35px', height: '35px'}}
               />

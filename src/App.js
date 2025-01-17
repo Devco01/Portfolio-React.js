@@ -11,20 +11,16 @@ import Modal from './components/layout/Modal';
 import Home from './components/pages/Home/Home';
 import Services from './components/pages/Services/Services';
 import Portfolio from './components/pages/Portfolio/Portfolio';
+import Contact from './components/pages/Contact/Contact';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [profile, setProfile] = useState({});
 
   useEffect(() => {
-    console.log('Récupération des données GitHub...');
     fetch('https://api.github.com/users/Devco01')
-      .then(response => {
-        console.log('Statut de la réponse:', response.status);
-        return response.json();
-      })
+      .then(response => response.json())
       .then(data => {
-        console.log('Données GitHub reçues:', data);
         setProfile(data);
       })
       .catch(error => {
@@ -42,12 +38,10 @@ function App() {
   }, []);
 
   const handleOpenModal = () => {
-    console.log('Ouverture de la modale');
     setIsModalOpen(true);
   };
 
   const handleCloseModal = () => {
-    console.log('Fermeture de la modale');
     setIsModalOpen(false);
   };
 
@@ -59,6 +53,7 @@ function App() {
           <Route path="/" element={<Home onButtonClick={handleOpenModal} />} />
           <Route path="/services" element={<Services />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
         <Modal 
